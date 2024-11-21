@@ -297,7 +297,7 @@ with tabs[1]:
 
         # Construir la URL con los filtros seleccionados
         value = FinViz_Structure[selected_category]
-        sector_filter = sectores_disponibles[selected_sector]
+        sector_filter = sectores_disponibles[selected_sector] if selected_sector != 'Any' else ''
         optionable_filter = optionable[selected_optionable]
 
         filters = [index_filter]  # Incluir el filtro del índice S&P 500 por defecto
